@@ -25,5 +25,7 @@ const data = fs.readdirSync('src/server/data/data')
 
     } )
 
+    console.log(`${data.length} files found`)
+
 
 fs.writeFileSync('./src/server/odds.json', JSON.stringify(data))
