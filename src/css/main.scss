@@ -1,0 +1,64 @@
+@import "mq";
+@import "fonts";
+@import "palette";
+// Uncomment for embeds
+//@import "embed";
+// Uncomment for full screen (including immersive article main media)
+//@import "fullscreen";
+.element-atom,
+.interactive-atom {
+    margin: 0 !important;
+}
+
+
+.tm-ylabel {
+    @include fs-textSans(2);
+}
+
+.tm-title {
+    @include fs-header(3);
+}
+
+.tm-svg {
+    width: 100%;
+    max-width: 620px;
+    display: block;
+    overflow: visible !important;
+    padding-left: 32px;
+    box-sizing: border-box;
+}
+
+.tm-source {
+
+    border-top: 1px solid #dcdcdc;
+    display: block;
+    width: 100%;
+    max-width: 620px;
+    margin-top: 6px;
+    padding-top: 3px;
+    @include fs-textSans(2);
+    color: #767676;
+}
+
+.tm-yline {
+    stroke: #dcdcdc;
+    stroke-width: 2;
+    stroke-dasharray: 0, 4;
+    stroke-linecap: round;
+
+    &.tm-yline--base {
+        stroke: #333;
+        stroke-dasharray: none;
+    }
+}
+
+.tm-odds {
+    stroke: $news-red;
+    stroke-width: 2.5;
+    fill: none;
+}
+
+.tm-label {
+    @include fs-textSans(2);
+    fill: $news-red;
+}
