@@ -6,7 +6,7 @@ export async function render() {
 
     return `
     
-    <h2 class='tm-title'>Theresa May to be Tory leader at the Next General Election</h2>
+    <h2 class='tm-title'>Theresa May to be Tory leader at the next general election</h2>
     
     <svg class='tm-svg'></svg>
     

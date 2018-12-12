@@ -90,6 +90,8 @@ const drawOdds = () => {
         .attr('class', 'tm-label')
         .style('text-anchor', (d, i) => i === 1 ? 'end' : 'start')
 
+    console.log(odds.map( t => t[1] ))
+
 
 }
 
